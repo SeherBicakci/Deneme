@@ -19,9 +19,8 @@ steps:
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
 
-- task: AzureWebApp@1
+- task: AzureStaticWebApp@0
   inputs:
     azureSubscription: 'SeherDeneme'
-    appType: 'staticwebapp'
     appName: 'Deneme1'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
