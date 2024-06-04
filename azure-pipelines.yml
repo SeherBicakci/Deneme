@@ -21,7 +21,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'ServiceSeher'
+    azureSubscription: 'SeherDeneme'
     appType: 'webApp'
     appName: 'Deneme1'
     package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
